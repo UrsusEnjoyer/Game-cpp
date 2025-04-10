@@ -1,0 +1,129 @@
+Zadanie 1: Walka bohatera z potworkiem
+Opis:
+Napisz program, który symuluje pojedynczą turę walki między bohaterem a potworkiem. Oblicz, ile punktów życia zostanie potworkowi po ataku bohatera.
+
+Wymagania:
+Napisz funkcję:
+
+
+int obliczPozostaleZycie(int zyciePotworka, int silaBohatera);
+Funkcja odejmuje siłę bohatera od życia potworka i zwraca wynik.
+
+Jeżeli wynik jest mniejszy niż 0, funkcja ma zwracać 0.
+
+W funkcji main():
+
+Wczytaj dane od użytkownika:
+
+imię bohatera (string)
+
+siłę bohatera (int)
+
+typ potworka (string)
+
+życie potworka (int)
+
+Wywołaj funkcję i wypisz komunikat:
+
+<imię> zaatakował potwora typu <typ>!
+Potwór ma teraz <nowe_zycie> punktów życia.
+
+
+Zadanie 2: Kto jest silniejszy?
+ Opis:
+Napisz program, który porównuje siłę bohatera i potwora i wypisuje, kto ma większe szanse na wygraną.
+
+Wymagania:
+Napisz funkcję:
+
+string ktoSilniejszy(int silaBohatera, int silaPotwora);
+Funkcja ma zwrócić:
+
+"Bohater" – jeśli bohater jest silniejszy,
+"Potwór" – jeśli potwór jest silniejszy,
+"Remis" – jeśli siły są równe.
+
+W funkcji main():
+Wczytaj dane od użytkownika:
+
+siła bohatera (int)
+siła potwora (int)
+
+Wywołaj funkcję i wypisz komunikat:
+Jeśli "Bohater": Bohater ma przewagę!
+Jeśli "Potwór": Potwór dominuje!
+Jeśli "Remis": Siły są wyrównane.
+
+Zadanie 3: Leczenie bohatera
+Opis:
+Napisz program, który pozwala bohaterowi odzyskać punkty życia dzięki eliksirowi. Sprawdź, czy po leczeniu jego życie nie przekracza maksymalnego limitu (100 punktów).
+
+Wymagania:
+Napisz funkcję:
+
+
+int leczenie(int aktualneZycie, int iloscEliksiru);
+Funkcja dodaje iloscEliksiru do aktualneZycie.
+
+Jeśli wynik przekracza 100, zwraca 100.
+W przeciwnym razie – zwraca nową wartość życia.
+
+W funkcji main():
+
+Wczytaj dane od użytkownika:
+
+imię bohatera (string)
+aktualne życie (int)
+ilość punktów życia, jaką daje eliksir (int)
+
+Wywołaj funkcję i wypisz komunikat:
+
+<imię> użył eliksiru i ma teraz <nowe_zycie> punktów życia.
+
+Zadanie 4: Walka do końca
+Opis:
+Napisz program, który symuluje walkę bohatera z potworem, aż jedna ze stron straci wszystkie punkty życia.
+
+Wymagania:
+Napisz funkcję:
+
+
+int atak(int zycieOfiary, int silaAtakujacego);
+Funkcja odejmuje siłę atakującego od życia ofiary. Jeśli wynik < 0, zwraca 0.
+
+W funkcji main():
+
+Wczytaj dane od użytkownika:
+
+imię bohatera (string)
+siła bohatera (int)
+aktualne życie bohatera (int)
+typ potwora (string)
+siła potwora (int)
+aktualne życie potwora (int)
+
+Wykonuj tury walki w pętli (while), dopóki ktoś nie zginie (życie == 0).
+
+W każdej turze:
+
+bohater atakuje potwora
+potwór atakuje bohatera (jeśli żyje)
+
+Po każdej turze wypisz stan życia obu postaci.
+
+Na końcu wypisz wynik:
+"Zwyciężył bohater!" lub
+"Potwór wygrał walkę!" lub
+"Obaj polegli jednocześnie!"
+
+Przykładowy wynik:
+Geralt zaatakował wilka! Potwór ma 30 punktów życia.
+Wilk uderzył Geralta! Bohater ma 25 punktów życia. 
+(...)
+Zwyciężył bohater!
+Masz teraz pełny zestaw zadań 1–4:
+
+Oblicz życie po ataku
+Porównaj siły
+Leczenie bohatera
+Walka do końca (symulacja) 
