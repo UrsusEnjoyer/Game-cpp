@@ -40,4 +40,4 @@ Program jest prostą grą RPG, w której gracz wciela się w postać bohatera, w
 3. Uruchom grę (np. `./gra`).
 
 ### Autorzy:
-- [Twoje imię lub nazwa użytkownika GitHub]
+- UrsusEnjoyer
